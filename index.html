@@ -3,12 +3,12 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Domine o GitHub - Para iniciantes - eBook por Danilo Silva</title>
+  <title>Domine o GitHub - eBook por Danilo Silva</title>
 
   <!-- SEO otimizado -->
-  <meta name="description" content="Aprenda Git e GitHub com o eBook exclusivo de Danilo Silva. Prático, direto e ideal para iniciantes. Compre agora e comece hoje mesmo.">
+  <meta name="description" content="Aprenda Git e GitHub com o eBook exclusivo de Danilo Silva. Prático, direto e ideal para iniciantes. Compre agora via Hotmart e comece hoje mesmo.">
   <meta name="keywords" content="ebook Git, GitHub, Git para iniciantes, versionamento, controle de código, GitHub do zero, Danilo Silva">
-  <meta property="og:title" content="Domine o GitHub - Para iniciantes - eBook Completo por Danilo Silva" />
+  <meta property="og:title" content="Domine o GitHub - eBook Completo por Danilo Silva" />
   <meta property="og:description" content="Comece a dominar Git e GitHub agora com este guia direto, simples e profissional." />
   <meta property="og:image" content="https://danilo282.github.io/git-github-iniciante/Ebook-capa_PT_BR.png" />
   <meta property="og:type" content="website" />
@@ -65,21 +65,10 @@
       text-decoration: none;
       transition: background 0.3s ease;
       box-shadow: 0 6px 16px rgba(244, 128, 36, 0.4);
-      margin-bottom: 8px;
+      margin-bottom: 24px;
     }
     .btn-buy:hover {
       background-color: #e06c1f;
-    }
-    .badge-guarantee {
-      display: block;
-      margin: 12px auto 24px auto;
-      font-size: 0.9rem;
-      color: #a1e887;
-      background: #154b0f;
-      border-radius: 6px;
-      padding: 8px 12px;
-      max-width: 280px;
-      box-shadow: 0 2px 6px rgba(161, 232, 135, 0.6);
     }
     .cta {
       font-size: 1.05rem;
@@ -96,20 +85,6 @@
       font-size: 0.95rem;
       font-style: italic;
       min-height: 120px;
-      position: relative;
-      overflow: hidden;
-    }
-    #testimonial-text {
-      opacity: 0;
-      transition: opacity 0.6s ease-in-out;
-      position: absolute;
-      width: 100%;
-      left: 0;
-      top: 16px;
-    }
-    #testimonial-text.show {
-      opacity: 1;
-      position: relative;
     }
     footer {
       margin-top: 30px;
@@ -140,19 +115,16 @@
       ✅ Comprar agora
     </a>
 
-    <span class="badge-guarantee">
-      🚀 Garantia de suporte e satisfação ou seu dinheiro de volta!
-    </span>
-
     <!-- Carrossel de Depoimentos -->
     <div id="testimonial-carousel">
-      <p id="testimonial-text" class="show">Carregando depoimentos...</p>
+      <p id="testimonial-text">Carregando depoimentos...</p>
       <p><strong id="testimonial-author"></strong></p>
     </div>
 
     <footer>
       <p>© 2025 Danilo Silva — Todos os direitos reservados</p>
       <p>📲 <a href="https://wa.me/5511941294343" target="_blank">Fale comigo no WhatsApp</a> em caso de dúvidas ou suporte.</p>
+  </p>
     </footer>
   </div>
 
@@ -197,14 +169,8 @@
     const authorEl = document.getElementById("testimonial-author");
 
     function showTestimonial(i) {
-      // Fade out
-      textEl.classList.remove("show");
-      setTimeout(() => {
-        textEl.textContent = `“${testimonials[i].text}”`;
-        authorEl.textContent = `— ${testimonials[i].author}`;
-        // Fade in
-        textEl.classList.add("show");
-      }, 600); // Duração da transição CSS
+      textEl.textContent = `“${testimonials[i].text}”`;
+      authorEl.textContent = `— ${testimonials[i].author}`;
     }
 
     showTestimonial(index);
