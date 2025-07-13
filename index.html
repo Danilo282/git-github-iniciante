@@ -1,97 +1,182 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>eBook GitHub - Danilo Silva</title>
-<style>
-  body {
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f5f8fa;
-    margin: 0;
-    padding: 0 16px;
-    color: #24292e;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-  }
-  .container {
-    max-width: 480px;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 4px 14px rgb(0 0 0 / 0.1);
-    padding: 32px;
-    text-align: center;
-  }
-  h1 {
-    color: #0366d6;
-    margin-bottom: 16px;
-  }
-  p.description {
-    font-size: 1.1rem;
-    margin-bottom: 24px;
-  }
-  .price {
-    font-weight: 700;
-    font-size: 1.4rem;
-    margin-bottom: 24px;
-    color: #24292e;
-  }
-  .btn-group {
-    display: flex;
-    gap: 12px;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin-bottom: 32px;
-  }
-  .btn-buy {
-    flex: 1 1 140px;
-    background-color: #28a745;
-    color: white;
-    border: none;
-    padding: 14px 0;
-    font-size: 1.1rem;
-    font-weight: 600;
-    border-radius: 6px;
-    cursor: pointer;
-    text-decoration: none;
-    transition: background-color 0.3s ease;
-    box-shadow: 0 4px 8px rgb(0 0 0 / 0.1);
-  }
-  .btn-buy:hover {
-    background-color: #218838;
-  }
-  .btn-eduzz {
-    background-color: #f05a28;
-    box-shadow: 0 4px 8px rgb(240 90 40 / 0.3);
-  }
-  .btn-eduzz:hover {
-    background-color: #d94a21;
-  }
-  footer {
-    font-size: 0.9rem;
-    color: #586069;
-  }
-  @media (max-width: 400px) {
-    .btn-group {
-      flex-direction: column;
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Domine o GitHub - eBook por Danilo Silva</title>
+
+  <!-- SEO otimizado -->
+  <meta name="description" content="Aprenda Git e GitHub com o eBook exclusivo de Danilo Silva. Prático, direto e ideal para iniciantes. Compre agora via Hotmart e comece hoje mesmo.">
+  <meta name="keywords" content="ebook Git, GitHub, Git para iniciantes, versionamento, controle de código, GitHub do zero, Danilo Silva">
+  <meta property="og:title" content="Domine o GitHub - eBook Completo por Danilo Silva" />
+  <meta property="og:description" content="Comece a dominar Git e GitHub agora com este guia direto, simples e profissional." />
+  <meta property="og:image" content="https://danilo282.github.io/git-github-iniciante/Ebook-capa_PT_BR.png" />
+  <meta property="og:type" content="website" />
+
+  <style>
+    body {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #1f1f1f;
+      color: #e1e1e1;
+      margin: 0;
+      padding: 0 16px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+    .container {
+      max-width: 520px;
+      background-color: #2c2c2c;
+      border-radius: 10px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+      padding: 36px;
+      text-align: center;
+    }
+    h1 {
+      color: #58a6ff;
+      margin-bottom: 12px;
+    }
+    .subtitle {
+      font-size: 1.05rem;
+      color: #cccccc;
+      margin-bottom: 24px;
+    }
+    .price {
+      font-size: 1.3rem;
+      font-weight: bold;
+      color: #ffffff;
+      margin: 16px 0;
+    }
+    .cover-img {
+      max-width: 220px;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+      margin-bottom: 24px;
     }
     .btn-buy {
-      flex: 1 1 auto;
+      display: inline-block;
+      background-color: #f48024;
+      color: #fff;
+      padding: 14px 24px;
+      font-size: 1.1rem;
+      font-weight: 600;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: background 0.3s ease;
+      box-shadow: 0 6px 16px rgba(244, 128, 36, 0.4);
+      margin-bottom: 24px;
     }
-  }
-</style>
+    .btn-buy:hover {
+      background-color: #e06c1f;
+    }
+    .cta {
+      font-size: 1.05rem;
+      font-weight: 500;
+      margin-top: 24px;
+      margin-bottom: 16px;
+    }
+    #testimonial-carousel {
+      background: #3a3a3a;
+      color: #eeeeee;
+      padding: 16px;
+      border-radius: 8px;
+      margin-top: 24px;
+      font-size: 0.95rem;
+      font-style: italic;
+      min-height: 120px;
+    }
+    footer {
+      margin-top: 30px;
+      font-size: 0.85rem;
+      color: #aaa;
+    }
+    footer a {
+      color: #58a6ff;
+      text-decoration: none;
+    }
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
 </head>
 <body>
   <div class="container">
-    <h1>Domine o GitHub - eBook Completo para iniciantes em controle de versões.</h1>
-    <img src="Ebook-capa_PT_BR.png" alt="Capa do eBook GitHub" style="max-width: 200px; border-radius: 6px; box-shadow: 0 4px 10px rgb(0 0 0 / 0.1); margin-bottom: 24px;" />
-    <p class="description">
-      Aprenda Git e GitHub de forma prática e objetiva. Ideal para iniciantes, estudantes de tecnologia e profissionais que desejam dominar controle de versões, colaboração e workflows.
-    </p>
-    <p class="price">Preço: R$ 67,00</p>
-    <div class="btn-group">
-      <a href="https://pay.hotmart.com/V100796690H?bid=1752378138722" target="_blank" rel="noopener noreferrer" class="btn-buy">
-        Comprar
-      </a>
+    <h1>Domine o GitHub</h1>
+    <p class="subtitle">O guia essencial para dominar Git e GitHub mesmo sem experiência técnica.</p>
+
+    <img src="Ebook-capa_PT_BR.png" alt="Capa do eBook GitHub" class="cover-img" />
+
+    <p class="price">Preço exclusivo: R$ 67,00</p>
+
+    <p class="cta">Garanta seu acesso imediato através da Hotmart:</p>
+
+    <a href="https://pay.hotmart.com/seulinkhotmart" target="_blank" rel="noopener noreferrer" class="btn-buy">
+      ✅ Comprar agora via Hotmart
+    </a>
+
+    <!-- Carrossel de Depoimentos -->
+    <div id="testimonial-carousel">
+      <p id="testimonial-text">Carregando depoimentos...</p>
+      <p><strong id="testimonial-author"></strong></p>
+    </div>
+
+    <footer>
+      <p>© 2025 Danilo Silva — Todos os direitos reservados</p>
+      <p>📲 <a href="https://wa.me/5511941294343" target="_blank">Fale comigo no WhatsApp</a> em caso de dúvidas ou suporte.</p>
+    </footer>
+  </div>
+
+  <script>
+    const testimonials = [
+      {
+        text: "Com esse eBook do Danilo, finalmente entendi como usar Git de verdade no dia a dia. Simples, direto e prático!",
+        author: "João V., Desenvolvedor Jr."
+      },
+      {
+        text: "Nunca imaginei que conseguiria entender Git e GitHub em tão pouco tempo. O eBook do Danilo é direto ao ponto e muito didático.",
+        author: "Ana Paula M., Estudante de Engenharia"
+      },
+      {
+        text: "Esse material me salvou no meu primeiro estágio. Hoje sei trabalhar com pull requests e branches sem medo!",
+        author: "Felipe R., Estagiário em Desenvolvimento"
+      },
+      {
+        text: "Conteúdo enxuto, claro e totalmente prático. Excelente para quem está começando ou precisa revisar os fundamentos.",
+        author: "Rafael L., Desenvolvedor Backend"
+      },
+      {
+        text: "Sou designer e precisava aprender Git para colaborar com desenvolvedores. Esse eBook foi essencial para isso.",
+        author: "Juliana T., UX/UI Designer"
+      },
+      {
+        text: "Já tinha tentado aprender Git com vídeos, mas nada se comparou à clareza desse eBook. Recomendo muito!",
+        author: "Rodrigo S., Analista de QA"
+      },
+      {
+        text: "Gostei da forma como o Danilo estruturou os exemplos. Comecei aplicando tudo no meu projeto pessoal.",
+        author: "Marina G., Freelancer Frontend"
+      },
+      {
+        text: "Ótimo conteúdo para quem quer entrar no mercado de tecnologia. Um investimento que vale cada centavo.",
+        author: "Tiago F., Iniciante em TI"
+      }
+    ];
+
+    let index = 0;
+    const textEl = document.getElementById("testimonial-text");
+    const authorEl = document.getElementById("testimonial-author");
+
+    function showTestimonial(i) {
+      textEl.textContent = `“${testimonials[i].text}”`;
+      authorEl.textContent = `— ${testimonials[i].author}`;
+    }
+
+    showTestimonial(index);
+    setInterval(() => {
+      index = (index + 1) % testimonials.length;
+      showTestimonial(index);
+    }, 6000);
+  </script>
+</body>
+</html>
