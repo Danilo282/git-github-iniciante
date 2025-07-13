@@ -9,7 +9,7 @@
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     background-color: #f5f8fa;
     margin: 0;
-    padding: 0;
+    padding: 0 16px;
     color: #24292e;
     display: flex;
     justify-content: center;
@@ -28,52 +28,72 @@
     color: #0366d6;
     margin-bottom: 16px;
   }
-  p {
+  p.description {
     font-size: 1.1rem;
     margin-bottom: 24px;
   }
-  .cover-img {
-    max-width: 200px;
+  .price {
+    font-weight: 700;
+    font-size: 1.4rem;
     margin-bottom: 24px;
-    border-radius: 6px;
-    box-shadow: 0 4px 10px rgb(0 0 0 / 0.1);
+    color: #24292e;
+  }
+  .btn-group {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 32px;
   }
   .btn-buy {
+    flex: 1 1 140px;
     background-color: #28a745;
     color: white;
     border: none;
-    padding: 14px 28px;
+    padding: 14px 0;
     font-size: 1.1rem;
+    font-weight: 600;
     border-radius: 6px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
     text-decoration: none;
-    display: inline-block;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 4px 8px rgb(0 0 0 / 0.1);
   }
   .btn-buy:hover {
     background-color: #218838;
   }
+  .btn-eduzz {
+    background-color: #f05a28;
+    box-shadow: 0 4px 8px rgb(240 90 40 / 0.3);
+  }
+  .btn-eduzz:hover {
+    background-color: #d94a21;
+  }
   footer {
-    margin-top: 36px;
     font-size: 0.9rem;
     color: #586069;
+  }
+  @media (max-width: 400px) {
+    .btn-group {
+      flex-direction: column;
+    }
+    .btn-buy {
+      flex: 1 1 auto;
+    }
   }
 </style>
 </head>
 <body>
   <div class="container">
-    <h1>Github para iniciantes - eBook Objetivo e Completo</h1>
-    <img src="Ebook-capa_PT_BR.png" alt="Ebook - Github" class="cover-img" />
-    <p>Aprenda Git e GitHub de forma prática e objetiva. Ideal para iniciantes e profissionais que desejam dominar controle de versões, colaboração e workflows.</p>
+    <h1>Domine o GitHub - eBook Completo</h1>
+    <img src="Ebook-capa_PT_BR.png" alt="Capa do eBook GitHub" style="max-width: 200px; border-radius: 6px; box-shadow: 0 4px 10px rgb(0 0 0 / 0.1); margin-bottom: 24px;" />
+    <p class="description">
+      Aprenda Git e GitHub de forma prática e objetiva. Ideal para iniciantes e profissionais que desejam dominar controle de versões, colaboração e workflows.
+    </p>
+    <p class="price">Preço: R$ 67,00</p>
 
-    <p class="price">Preço: R$ 57,00</p>
-    
-    <img src="pix-qr-code.png" alt="QR Code para pagamento via Pix" class="qr-code" />
-    <p>Escaneie o QR Code acima com seu app bancário para realizar o pagamento.</p>
-    
-    <footer>
-      <p>© 2025 Danilo Silva - Todos os direitos reservados</p>
-    </footer>
-  </div>
-</body>
-</html>
+    <div class="btn-group">
+      <a href="https://pay.hotmart.com/seulinkhotmart" target="_blank" rel="noopener noreferrer" class="btn-buy">
+        Comprar via Hotmart
+      </a>
+      <a href="https://www.eduzz.com.br/seulinkeduzz" target="_blank" rel="noopener norefe_
